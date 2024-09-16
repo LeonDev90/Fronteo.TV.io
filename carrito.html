@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ojo libreia mensajes Tostyfy -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--ojo libreria amail js-->
+
+    <link rel="shortcut icon" href="./img/logo streaming.png" type="image/x-icon">
+
+
+    <script src="./lib/html2canvas.min.js"></script><!-- libreria canvas IMG resumen de compra  -->
+
+    <script type="text/javascript">
+        emailjs.init('KFZ8WsN6aH69H3Gae')
+    </script><!-- iniciador de cuenta emailjs  -->
+
+    <link rel="stylesheet" href="tienda.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor_tienda">
+
+        <!-- ENCABEZADO MOBIL-->
+        <header class="header_mobile">
+
+
+            <a class="contenedor_icon_carri" href="./tienda.html"><img class="icono_tienda_nav"
+                    src="./img/icono_tienda-.png" alt="carrito">
+            </a>
+
+            <a><img  class="logo_mobil" src="./img/logo streaming.png" alt="logo"></a>
+
+            <button class="open_menu" id="openMenu"><img class="icono_hamburguer" src="./img/icono_menu_hambuerguer.png"
+                    alt="icon menu"></button>
+
+        </header>
+
+        <aside>
+
+            <button class="close_menu" id="closeMenu">X</i></button>
+
+            <header class="conteneodor_menu">
+                <img class="logo_aside" src="./img//logo streaming.png" alt="img">
+
+            </header hidden>
+
+            <nav>
+                <ul class="c_lista">
+
+                    <!-- ///////////////Boton cambiar de fondo/////////// -->
+                    <div id="toggle_fondo">
+                        <i class="indicator"></i>
+                    </div>
+
+                    <li>
+                        <a href="./tienda.html"><button id="Bolsos" class="boton__menu boton_categoria"><i
+                                    class="bi bi-house-up-fill icono_inicio"></i>Inicio</button></a>
+                    </li>
+
+
+
+                    <li>
+                        <a class="boton__menu boton_volver" href="./tienda.html">
+                            <img class="icono_carrito" src="./img/punta-de-flecha-izquierda-en-un-circulo.png"
+                                width="20px" alt="volver">Seguir
+                            Comprando...
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="boton__menu boton_categoria boton_carrito active" href="./carrito.html">
+                            <img class="icono_carrito" src="./img/comercio.png" width="25px" alt="carrito">Carrito <span
+                                id="numerito" class="nemero_carrito">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+            <footer>
+                <a href="">
+                    <p class="texto_footer">© 2023 biggers webCode Colombia </p>
+            </footer></a>
+        </aside>
+
+
+        <main>
+
+
+            <h2 class="titulo_principal">Carrito</h2>
+
+            <div class="contenedor_carrito"></div>
+
+            <p id="carritoVacio" class="carrito_vacio">Tu carrito esta vacio.<i class="bi bi-cart-x-fill"></i></p>
+
+            <div id="carritoProductos" class="carrito_productos disabled">
+
+                <!-- esto se rrellena con template string JS -->
+            </div>
+
+          
+            <p id="carritoComprado" class="carrito_comprado">Gracias por tu compra... En 10 minutos llegaran tus pin (s) de ingreso! <img class="icono_compra" src="./img/comercio.png" alt=""></p>
+
+            <!-- ////////////////formulario de comprador///////////////// -->
+            <form id="form">
+
+                <div class="contenedor_formulario">
+
+                  
+                    <div class="conte_datos_basicos">
+                        <p class="datos_envio"> DATOS DE ENVIO...</p>
+
+                        <div class="field">
+                            <label for="nombre_id">Nombre</label>
+                            <input type="text" name="nombre_id" id="nombre">
+                        </div>
+                        <div class="field">
+                            <label for="correo_id">correo@</label>
+                            <input type="email" name="correo_id" id="correo_id">
+                        </div>
+                        <div class="field">
+                            <label for="telefono_id">Telefono</label>
+                            <input type="text" name="telefono_id" id="telefono_id">
+                        </div>
+                        <div class="field">
+                            <label for="direccion_id">Direccion</label>
+                            <input type="text" name="direccion_id" id="direccion_id">
+                        </div>
+                        <div class="field">
+                            <label for="ciudad_id">Ciudad</label>
+                            <input type="text" name="ciudad_id" id="ciudad_id">
+                        </div>
+
+
+                        <div class="field">
+                            <label for="mensaje_id">Mensaje:</label>
+                            <textarea class="cuadro_text_compra" id="mensaje" name="mensaje_id" required></textarea>
+    
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Lista para detalles de productos -->
+                <div id="detallesProductos" hidden></div>
+
+
+
+
+                <!-- envio submit -->
+                <input class="carrito_acciones_comprar" type="submit" value="Confirmar Compra">
+                <p class="resumen_compra">RESUMEN DE COMPRA</p>
+
+
+                <p id="totalEnFormulario">Total: $0.00 </p>
+
+
+                <!-- Nuevo campo de entrada para adjuntar la imagen -->
+                <img id="imagenCapturada"
+                    style="border-radius: 2vh; padding: 10px; border: solid rgb(40, 200, 252) 1.5px; display: none; width: 100%; height: 100% auto;"
+                    alt="Captura de pantalla">
+
+
+                <!-- Agrega este campo oculto en tu formulario -->
+                <!-- <input type="" id="capturaPantallaBase64" name="capturaPantallaBase64"> -->
+
+
+
+            </form>
+
+
+        </main>
+
+        <div id="carritoAcciones" class="carrito_acciones disabled">
+
+            <div class="carrito_acciones_izquierda">
+                <button id="carrito-acciones-vaciar" class="carrito_acciones_vaciar">Vaciar carrito</button>
+            </div>
+
+            <div class="carrito_acciones_derecha">
+                <div class="carrito_acciones_total">
+                    <p>Total:</p>
+                    <p id="total">$30.000</p>
+                </div>
+
+                <button id="carrito-acciones-comprar" id="botonComprar" class="carrito_acciones_comprar">Comprar
+                    ahora</button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!-- ojo libreia mensajes Tostyfy -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- ojo SWIT ALERT -->
+    <script src="carrito.js"></script> <!-- ojo LOGICA DEL CARRITO -->
+
+
+</body>
+
+</html>

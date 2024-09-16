@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="./img/logo streaming.png" type="image/x-icon">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+
+    <div class="contenedor_tienda">
+
+        <header class="header_mobile">
+
+            <img class="logo_mobil" src="./img/logo streaming.png" alt="logo">
+            <a href="./index.html"><img class="icono_inicio_header_mobil" src="./img/icono_home.png" alt="home"></a>
+            <a href="#"></a>
+
+
+
+            <button class="open_menu" id="openMenu"><img class="icono_hamburguer" src="./img/icono_menu_hambuerguer.png"
+                    alt=""></button>
+
+            <!-- ///////////////icono carrito nav/////////// -->
+            <a class="contenedor_icon_carri" href="./carrito.html"><img class="icono_carrito_nav" src="./img/bienes.png"
+                    alt="carrito">
+            </a>
+
+        </header>
+
+        <aside>
+
+            <button class="close_menu" id="closeMenu">x</button>
+
+            <header class="contenedor_menu">
+
+                <img class="logo_aside" src="./img/logo streaming.png" alt="img">
+
+
+
+            </header>
+
+            <nav>
+                <!--  rede socials -->
+                <div class=" contenedorG_Redes">
+
+                    <a href="/https://www.facebook.com/profile.php?id=61565762734839"> <img CLASS="icono_social"
+                            src="./Iconos_redes/facebook (1).png" alt="facebook" /></a>
+
+                    <a href="/#"> <img class="icono_social" src="./Iconos_redes/instagram (1).png"
+                            alt="instagram" /></a>
+
+                    <a href="/"> <img class="icono_social" src="./Iconos_redes/tictok.webp" alt="ticktok" /></a>
+
+                    <a href="https://wa.me/573229206229/?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"> <img
+                            class="icono_social" src="./Iconos_redes/whatsapp (1).png" alt="whatsApp" /></a>
+
+                    <a href="tel:3229206229"> <img class="icono_social" src="./Iconos_redes/llamada.png" alt="telefono" /></a>
+
+                    <!-- <a href="/#"> <img class="icono_social" src="./Iconos_redes/logo_metaX-1.png" alt="twiter"
+                            hidden /></a>
+                    <a href="/#"> <img class="icono_social" src="./Iconos_redes/youtube (1).png" alt="youtube"
+                            hidden /></a> -->
+
+                    <h2 class="tex_iferior_redes">!Síguenos en nuestras redes sociales y mantente al día.</h2>
+
+
+
+                </div>
+
+
+                <ul class="c_lista">
+
+                    <!-- ///////////////Boton cambiar de fondo/////////// -->
+                    <div id="toggle_fondo">
+                        <i class="indicator"></i>
+                    </div>
+                    <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                    <li>
+                        <button id="todos" class="boton__menu boton_categoria active"><ion-icon
+                                name="caret-forward-outline"></ion-icon> Todas
+                            las
+                            Pantallas</button>
+                    </li>
+                    <!-- 
+                    <li>
+                        <button id="hogar" class="boton__menu boton_categoria"> <ion-icon
+                                name="caret-forward-outline"></ion-icon>Productos Hogar</button>
+                    </li>
+
+                    <li>
+                        <button id="Camisetas" class="boton__menu boton_categoria"> <ion-icon
+                                name="caret-forward-outline"></ion-icon>Camisetas </button>
+                    </li>
+                    <li>
+                        <button id="Pantalones" class="boton__menu  boton_categoria"> <ion-icon
+                                name="caret-forward-outline"></ion-icon>Pantalones</button>
+                    </li>
+
+                    <li>
+                        <button id="Comidas" class="boton__menu boton_categoria "> <ion-icon
+                                name="caret-forward-outline"></ion-icon>Comidas</button>
+                    </li>
+
+
+                    <li>-->
+                    <a href="./index.html"><button class="boton__menu boton_categoria"><img class="icono_inicio"
+                                src="./img/icono_home.png" alt="home"></button></a>
+                    </li>
+
+
+
+
+                    <li>
+                        <a class="boton__menu boton_carrito " href="./carrito.html"><img class="icono_carrito"
+                                src="./img/bienes.png" width="45px" alt="carrito">Carrito <span id="numerito"
+                                class="nemero_carrito">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+            <footer>
+                <p class="texto_footer">© 2023 Biggersweb Colombia Code </p>
+            </footer>
+
+        </aside>
+
+        <main>
+
+
+
+
+
+            <h2 class="titulo_principal" id="titulo_principal">Todas las Plataformas</h2>
+
+
+            <div class="contenedor_Productos" id="contenedor_Productos">
+                <!-- esto se rellena con javascript -->
+
+            </div>
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="tienda.js"></script>
+
+
+
+</body>
+
+</html>

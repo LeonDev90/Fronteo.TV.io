@@ -1,0 +1,247 @@
+[
+  {
+    "id": "1",
+    "titulo": "Disney + ",
+    "imagen": "./productos/icono disney.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Disney pantalla por un mes",
+    "p_descrip": "La plataforma reúne todo el contenido cinematográfico de Disney, Pixar, Marvel, Star Wars, y 20th Century Studios. Está disponible en toda Latinoamérica.",
+    "img_descrip": "./productos/icono disney.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 17000
+  },
+
+  {
+    "id": "2",
+    "titulo": "Netflix",
+    "imagen":"./productos/netflix.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Netflix pantalla por un mes",
+    "p_descrip": "Aunque es global, Netflix tiene una fuerte presencia en Latinoamérica con una amplia gama de películas ",
+    "img_descrip": "./productos/netflix.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 13000
+  },
+
+
+  {
+    "id": "3",
+    "titulo": "Prime video",
+    "imagen": "./productos/icono prime video.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Prime video pantalla por un mes",
+    "p_descrip":"Es una plataforma de streaming que forma parte del servicio de suscripción de Amazon Prime. Ofrece una amplia biblioteca de contenido, incluyendo películas, series de televisión.",
+    "img_descrip": "./productos/icono prime video.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 23000
+  },
+
+  {
+    "id": "4",
+    "titulo": "Hbo max",
+    "imagen": "./productos/icono_Hbo_max.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Hbo_maxpantalla por un mes",
+    "p_descrip": " Es un canal de televisión por suscripción premium reconocido por su contenido de alta calidad, que incluye series originales, películas, documentales y eventos especiales.",
+    "img_descrip": "./productos/icono_Hbo_max.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 13000
+  },
+
+  {
+    "id": "5",
+    "titulo": "Paramount ",
+    "imagen": "./productos/icono paramount.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "paramount pantalla por un mes",
+    "p_descrip": "Plataforma de streaming de suscripción propiedad de Paramount Global, que ofrece una amplia gama de contenido de películas, series de televisión, documentales, deportes, y producciones originales exclusivas.",
+    "img_descrip": "./productos/icono paramount.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 18000
+  },
+
+
+  {
+    "id": "6",
+    "titulo": "Apple tv",
+    "imagen":"./productos/icono apple tv.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Apple tv pantalla por un mes",
+    "p_descrip": "Enfocada en contenido original de alta calidad, que incluye series, películas, documentales y programas de entretenimiento producidos exclusivamente para la plataforma. Está disponible en Latinoamérica y en muchos otros países.",
+    "img_descrip": "./productos/icono apple tv.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 21000
+  },
+
+
+  {
+    "id": "7",
+    "titulo": "Spotify premium",
+    "imagen": "./productos/icono spotify.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Spotify premium pantalla por un mes",
+    "p_descrip": "Plataforma de streaming de música y podcasts que ofrece acceso a millones de canciones, episodios de podcasts y contenido de audio de todo el mundo. Aunque su enfoque principal es la música.",
+    "img_descrip":"./productos/icono spotify.png" ,
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 15000
+  },
+
+  {
+    "id": "8",
+    "titulo": "Vix",
+    "imagen": "./productos/icono vix.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Vix pantalla por un mes",
+    "p_descrip": "Ofrece una amplia gama de contenido en español, incluyendo películas, series de televisión, telenovelas y programas originales. Está dirigida principalmente a la audiencia de habla hispana en Latinoamérica y Estados Unidos.",
+    "img_descrip":"./productos/icono vix.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 20000
+  },
+
+  {
+    "id": "9",
+    "titulo": "Plex",
+    "imagen":"./productos/icono plex.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Plex pantalla por un mes",
+    "p_descrip": "Permite a los usuarios organizar, gestionar y transmitir su propio contenido multimedia, además de ofrecer acceso a contenido de terceros a través de su servicio de streaming. Está disponible en Latinoamérica y en muchos otros países.",
+    "img_descrip": "./productos/icono plex.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 18000
+  },
+
+  {
+    "id": "10",
+    "titulo": "Iptv",
+    "imagen": "./productos/icono iptv.png" ,
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Iptv pantalla por un mes",
+    "p_descrip": "(Internet Protocol Television) es una tecnología que permite la transmisión de televisión a través de internet en lugar de las tradicionales señales por cable o satélite. A través de IPTV.",
+    "img_descrip": "./productos/icono iptv.png" ,
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 25000
+  },
+
+  {
+    "id": "11",
+    "titulo": "Win sport",
+    "imagen": "./productos/icono win sport.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Win sport pantalla por un mes",
+    "p_descrip": "Canal y servicio de streaming dedicado a la transmisión de eventos deportivos, particularmente en Colombia y algunos otros países latinoamericanos. Ofrece una amplia gama de contenido relacionado con deportes.",
+    "img_descrip": "./productos/icono win sport.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 20000
+  },
+
+  {
+    "id": "12",
+    "titulo": "Youtube premium",
+    "imagen": "./productos/icono youtube premium.png" ,
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Youtube premium suscripcion por mes",
+    "p_descrip": "Servicio de suscripción ofrecido por YouTube que proporciona una serie de beneficios adicionales sobre la versión gratuita de la plataforma. Aquí tienes una descripción detallada de YouTube Premium:",
+    "img_descrip": "./productos/icono youtube premium.png" ,
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 15000
+  },
+
+  {
+    "id": "13",
+    "titulo": "Star chanel",
+    "imagen": "./productos/icono de star chanel.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Star chanel pantalla por un mes",
+    "p_descrip": "Canal de televisión de pago que forma parte del grupo de medios Disney y es conocido por su programación que incluye películas, series de televisión y contenido de entretenimiento. Está disponible en varios países.",
+    "img_descrip": "./productos/icono de star chanel.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 17000
+  },
+
+
+  {
+    "id": "14",
+    "titulo": "Claro video",
+    "imagen": "./productos/icono claro video.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Claro video pantalla por un mes",
+    "p_descrip": "Servicio de streaming que ofrece una amplia variedad de contenido, incluyendo películas, series de televisión, y documentales. Está disponible en Latinoamérica y es operado por Claro, una importante compañía de telecomunicaciones en la región.",
+    "img_descrip": "./productos/icono claro video.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 22000
+  },
+
+  {
+    "id": "15",
+    "titulo": "Fox sport",
+    "imagen": "./productos/icono fox sport.png",
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Fox sport pantalla por un mes",
+    "p_descrip": " Es una red de canales de televisión dedicada a la transmisión de eventos deportivos, noticias deportivas y programas relacionados con el deporte. Fox Sports ofrece una cobertura extensa de una variedad de deportes y está disponible en varios países, incluida Latinoamérica.",
+    "img_descrip": "./productos/icono fox sport.png",
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 20000
+  },
+
+  {
+    "id": "16",
+    "titulo": "Espn +",
+    "imagen": "./productos/icono de speden +.png" ,
+    "categoria": {
+      "nombre": "Entretenimiento",
+      "id": "familiar"
+    },
+    "titul_des": "Espn + pantalla por un mes",
+    "p_descrip": "Es una de las principales redes de televisión y plataformas de streaming dedicadas a la cobertura de eventos deportivos a nivel mundial.",
+    "img_descrip": "./productos/icono de speden +.png" ,
+    "p_promocion": "Adquiere descuentos mes a mes con Fronteo . TV",
+    "precio": 20000
+  }
+
+  
+]
